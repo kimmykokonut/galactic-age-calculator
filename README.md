@@ -1,33 +1,39 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### An application that determines a user's age based on a planet's solar years.
 
-#### By (Your Name Here)
+#### By Kim Robinson
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Html
+* Javascript
+* CSS
+* npm
+* webpack
+* Jest testing
 
-## Description
+## A code review for Epicodus to demonstrate Test-Driven-Development and Environments with JavaScript
+###  This app will take a user's age input and:
+    -Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
+    -Returns their age in Venus years. (A Venus year is .62 Earth years.)
+    -Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
+    -Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+    -Determines how many years have passed on each planet since a past birthday. 
+    -Determines how many years have yet to pass until a future birthday. 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _**TO ADD NPM INSTALL ETC
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No known bugs
 
 ## License
+_MIT License. See license.md for further information
 
+---------------------------------------------
 When you create your template repository, take the time to add thorough installation/setup instructions to your README. This should include information on how to run the project:
 
 Installing all packages with $ npm install.
