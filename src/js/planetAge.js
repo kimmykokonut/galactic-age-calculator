@@ -23,7 +23,7 @@ export function earthToMars(person) {
   return marsAgeRound;
 }
 export function earthToJupiter(person) {
-  // let marsAge = person.yearsToDays() / 687;
-  // let marsAgeRound = Math.round(marsAge * 100) / 100;
-  // return marsAgeRound;
+  let jupiterAge = person.age / 12;
+  let jupiterAgeRound = Math.round(jupiterAge * 100) / 100;
+  return jupiterAgeRound;
 }
