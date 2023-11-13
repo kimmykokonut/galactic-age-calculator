@@ -75,5 +75,10 @@ describe('Person', () => {
       expect(reusablePerson.yearsToFutureBday()).toEqual(8);
     });
   });
+  describe('yearsToMercury()', () => {
+    test('should return how many Mercury years have yet to pass from current age to specific age', () => {
+      expect(reusablePerson.yearsToMercury()).toEqual(33.33);
+    });
+  });
 
 });

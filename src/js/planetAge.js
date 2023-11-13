@@ -53,4 +53,7 @@ export class Person {
     const earthTimeFuture = parseInt(this.futureBday - this.age);
     return earthTimeFuture;
   }
+  yearsToMercury() {
+    
+  }
 } 
