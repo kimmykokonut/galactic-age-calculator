@@ -30,17 +30,14 @@ export class Person {
   }
   yearsFromMercury() {
     this.age = this.yearsFromPastBday()
-    console.log(this.age);
     const mercTimePast = this.earthToMercury();
-    console.log(mercTimePast);
     return mercTimePast;
   }
   yearsFromVenus() {
-    // this.age = this.yearsFromPastBday()
-    // console.log(this.age);
-    // const mercTimePast = this.earthToMercury();
-    // console.log(mercTimePast);
-    // return mercTimePast;
+    this.age = this.yearsFromPastBday()
+    const venusTimePast = this.earthToVenus();
+    console.log(venusTimePast);
+    return venusTimePast;
   }
 } 
 
