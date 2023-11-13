@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-      <title>Galactic Age Calculator</title>
+  <title>Galactic Age Calculator</title>
 </head>
+
 <body>
-  <h1>Header</h1>
-  <h3>Enter three lengths to determine if they can make a triangle.</h3>
-  <img class="img-fluid" src="./assets/images/stock-puppy-photo.jpg" alt="brown dog"/>
-  <form id="triangle-checker-form">
-    <label for="length1">Enter a number:</label>
-    <input id="length1" type="number">
-    <label for="length2">Enter a number:</label>
-    <input id="length2" type="number">
-    <label for="length3">Enter a number:</label>
-    <input id="length3" type="number">
-    <button type="submit">Submit</button>
+  <div class="container">
+  <img class="img-fluid text-center" src="./assets/images/solarSystem.jpg" alt="planets in solar sytem"/>
+  <h1>How old are you really?</h1>
+  <h3>Let's see how old you would be based on other planet's solar years</h3>
+  <form id="age-form">
+    <label for="nameInput">Enter your name:</label>
+    <input id="nameInput" type="text">
+    <label for="ageInput">Enter your age:</label>
+    <input id="ageInput" type="number">
+    <label for="agePast">Enter a past age to see how many birthdays have happened between then and now:</label>
+    <input id="agePast" type="number">
+    <label for="ageFuture">Enter a future age to see how many birthdays have yet to happen between then and now:</label>
+    <input id="ageFuture" type="number">
+    <button type="submit">Blast off!</button>
   </form>
-  <div id="response"></div>
+    <img class="img-fluid" src="./assets/images/animal.webp" alt="animals in space" />
+  <div id="responseCurrent"></div>
+  <div id="responsePast"></div>
+  <div id="responseFuture"></div>
+</div>
 </body>
+
 </html>
