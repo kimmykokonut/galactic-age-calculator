@@ -75,7 +75,6 @@ export class Person {
     return jupiterTimeFuture;
   }
 } 
-
 export function isEmpty(testString) {
   return (testString.trim().length === 0);
 }

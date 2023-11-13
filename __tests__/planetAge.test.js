@@ -23,72 +23,86 @@ describe('Person', () => {
       expect(reusablePerson.earthToMercury()).toEqual(54.17);
     });
   });
+
   describe('earthToVenus()', () => {
     test('should return venus age in years', () => {
       expect(reusablePerson.earthToVenus()).toEqual(20.97);
     });
   });
+
   describe('earthToMars()', () => {
     test('should return mars age in years', () => {
       expect(reusablePerson.earthToMars()).toEqual(6.91);
     });
   });
+
   describe('earthToJupiter()', () => {
     test('should return jupiter age in years', () => {
       expect(reusablePerson.earthToJupiter()).toEqual(1.1);
     });
   });
+
   describe('yearsFromPastBday()', () => {
     test('should return how many Earth years have passed from a specific age to current age', () => {
       expect(reusablePerson.yearsFromPastBday()).toEqual(10);
     });
   });
+
   describe('yearsFromMercury()', () => {
     test('should return how many Mercury years have passed from a specific age to current age', () => {
       expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
     });
   });
+
   describe('yearsFromVenus()', () => {
     test('should return how many Venus years have passed from a specific age to current age', () => {
       expect(reusablePerson.yearsFromVenus()).toEqual(16.13);
     });
   });
+
   describe('yearsFromMars()', () => {
     test('should return how many Mars years have passed from a specific age to current age', () => {
       expect(reusablePerson.yearsFromMars()).toEqual(5.32);
     });
   });
+
   describe('yearsFromJupiter()', () => {
     test('should return how many Jupiter years have passed from a specific age to current age', () => {
       expect(reusablePerson.yearsFromJupiter()).toEqual(0.84);
     });
   });
+
   describe('Person', () => {
     test('should correctly create a person object from reusablePerson with updated properties', () => {
       expect(reusablePerson.pastBday).toEqual(3);
       expect(reusablePerson.futureBday).toEqual(21);
     });
   });
+
   describe('yearsToFutureBday()', () => {
     test('should return how many Earth years have yet to pass from current age to specific age', () => {
       expect(reusablePerson.yearsToFutureBday()).toEqual(8);
     });
   });
+
   describe('yearsToMercury()', () => {
     test('should return how many Mercury years have yet to pass from current age to specific age', () => {
       expect(reusablePerson.yearsToMercury()).toEqual(33.33);
     });
   });
+
   describe('yearsToVenus()', () => {
     test('should return how many Venus years have yet to pass from current age to specific age', () => {
       expect(reusablePerson.yearsToVenus()).toEqual(12.9);
     });
   });
+
   describe('yearsToMars()', () => {
     test('should return how many Mars years have yet to pass from current age to specific age', () => {
       expect(reusablePerson.yearsToMars()).toEqual(4.26);
     });
   });
+  
   describe('yearsToJupiter()', () => {
     test('should return how many Jupiter years have yet to pass from current age to specific age', () => {
       expect(reusablePerson.yearsToJupiter()).toEqual(0.67);
