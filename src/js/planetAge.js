@@ -45,6 +45,9 @@ export class Person {
     return marsTimePast;
   }
   yearsFromJupiter() {
-    
+    this.age = this.yearsFromPastBday()
+    const jupiterTimePast = this.earthToJupiter();
+    console.log(jupiterTimePast);
+    return jupiterTimePast;
   }
 } 
