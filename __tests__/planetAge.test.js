@@ -34,11 +34,11 @@ describe('Person', () => {
       expect(reusablePerson.earthToMars()).toEqual(6.91);
     });
   });
-  // describe('earthToJupiter()', () => {
-  //   test('should return jupiter age in years', () => {
-  //     expect(reusablePerson.earthToJupiter()).toEqual(1.1);
-  //   });
-  // });
+  describe('earthToJupiter()', () => {
+    test('should return jupiter age in years', () => {
+      expect(reusablePerson.earthToJupiter()).toEqual(1.1);
+    });
+  });
   // describe('yearsFromPastBday()', () => {
   //   test('should return how many Earth years have passed from a specific age to current age', () => {
   //     expect(reusablePerson.yearsFromPastBday()).toEqual(10);
