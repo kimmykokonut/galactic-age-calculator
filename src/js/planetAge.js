@@ -4,7 +4,7 @@ export default class Person {
     this.age = age;
   }
 
-  // checkType() {
-    
-  // }
+  yearsToDays() {
+    console.log('hi');
+  }
 }

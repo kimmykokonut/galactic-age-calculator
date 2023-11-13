@@ -1,7 +1,7 @@
 {
   "name": "galactic-age-calculator",
   "version": "1.0.0",
-  "description": "#### (Brief Description of Application)",
+  "description": "Calculate Earth Age into other planet's solar years",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kimmykokonut/template-repo.git"
+    "url": "git+https://github.com/kimmykokonut/galactic-age-calculator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kimmykokonut/template-repo/issues"
+    "url": "https://github.com/kimmykokonut/galactic-age-calculator/issues"
   },
-  "homepage": "https://github.com/kimmykokonut/template-repo#readme",
+  "homepage": "https://github.com/kimmykokonut/galactic-age-calculator#readme",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/plugin-transform-modules-commonjs": "^7.22.5",

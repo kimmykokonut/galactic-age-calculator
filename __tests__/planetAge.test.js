@@ -1,3 +1,4 @@
+import { experiments } from 'webpack';
 import Person from '../src/js/planetAge.js';
 
 describe('Person', () => {
@@ -5,5 +6,11 @@ describe('Person', () => {
     const geneveve = new Person("Geneveve", 13);
     expect(geneveve.name).toEqual("Geneveve");
     expect(geneveve.age).toEqual(13);
+  });
+});
+describe('yearsToDays()', () => {
+  test('should return earth age in years to earth age in days', () => {
+    const geneveve = new Person("Geneveve", 13);
+    expect(geneveve.yearsToDays()).toEqual(4745);
   });
 });
