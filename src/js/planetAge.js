@@ -22,3 +22,8 @@ export function earthToMars(person) {
   let marsAgeRound = Math.round(marsAge * 100) / 100;
   return marsAgeRound;
 }
+export function earthToJupiter(person) {
+  // let marsAge = person.yearsToDays() / 687;
+  // let marsAgeRound = Math.round(marsAge * 100) / 100;
+  // return marsAgeRound;
+}
