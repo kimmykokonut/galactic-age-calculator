@@ -27,6 +27,7 @@ export class Person {
     return jupiterAgeRound;
   }
 } 
-export function yearsFromLastBday() {
-  console.log('years');
+export function yearsFromLastBday(person, pastAge) {
+  let earthTime = (person.age - pastAge);
+  return earthTime;
 }
