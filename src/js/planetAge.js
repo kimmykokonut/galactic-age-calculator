@@ -63,4 +63,7 @@ export class Person {
     const venusTimeFuture = this.earthToVenus();
     return venusTimeFuture;
   }
+  yearsToMars() {
+    
+  }
 } 
