@@ -1,4 +1,3 @@
-import { experiments } from 'webpack';
 import { Person } from '../src/js/planetAge.js';
 
 describe('Person', () => {

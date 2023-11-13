@@ -30,22 +30,22 @@ export class Person {
     return earthTimePast;
   }
   yearsFromMercury() {
-    this.age = this.yearsFromPastBday()
+    this.age = this.yearsFromPastBday();
     const mercTimePast = this.earthToMercury();
     return mercTimePast;
   }
   yearsFromVenus() {
-    this.age = this.yearsFromPastBday()
+    this.age = this.yearsFromPastBday();
     const venusTimePast = this.earthToVenus();
     return venusTimePast;
   }
   yearsFromMars() {
-    this.age = this.yearsFromPastBday()
+    this.age = this.yearsFromPastBday();
     const marsTimePast = this.earthToMars();
     return marsTimePast;
   }
   yearsFromJupiter() {
-    this.age = this.yearsFromPastBday()
+    this.age = this.yearsFromPastBday();
     const jupiterTimePast = this.earthToJupiter();
     return jupiterTimePast;
   }
@@ -54,22 +54,22 @@ export class Person {
     return earthTimeFuture;
   }
   yearsToMercury() {
-    this.age = this.yearsToFutureBday()
+    this.age = this.yearsToFutureBday();
     const mercuryTimeFuture = this.earthToMercury();
     return mercuryTimeFuture;
   }
   yearsToVenus() {
-    this.age = this.yearsToFutureBday()
+    this.age = this.yearsToFutureBday();
     const venusTimeFuture = this.earthToVenus();
     return venusTimeFuture;
   }
   yearsToMars() {
-    this.age = this.yearsToFutureBday()
+    this.age = this.yearsToFutureBday();
     const marsTimeFuture = this.earthToMars();
     return marsTimeFuture;
   }
   yearsToJupiter() {
-    this.age = this.yearsToFutureBday()
+    this.age = this.yearsToFutureBday();
     const jupiterTimeFuture = this.earthToJupiter();
     return jupiterTimeFuture;
   }
