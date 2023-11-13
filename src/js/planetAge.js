@@ -28,6 +28,7 @@ export class Person {
   }
 } 
 export function yearsFromLastBday(person, pastAge) {
-  let earthTime = (person.age - pastAge);
-  return earthTime;
+  const earthTime = (person.age - pastAge);
+  const mercTime = Math.round(((person.age - pastAge) / 0.24) * 100) /100;
+  return [earthTime, mercTime];
 }
