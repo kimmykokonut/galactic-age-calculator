@@ -1,4 +1,4 @@
-import { Person, yearsFromLastBday } from '../src/js/planetAge.js';
+import { Person } from '../src/js/planetAge.js';
 
 describe('Person', () => {
   let reusablePerson;
@@ -37,14 +37,16 @@ describe('Person', () => {
       expect(reusablePerson.earthToJupiter()).toEqual(1.1);
     });
   });
-});
-describe('yearsFromLastBday()', () => {
-  test('should return how many Earth years have passed from a specific age to current age', () => {
-    let xena = new Person("Xena", 9);
-    expect(yearsFromLastBday(xena, 4)).toEqual(5);
-  });
-  test('should return how many Mercury years have passed from a specific age to current age', () => {
-    let xena = new Person("Xena", 9);
-    expect(yearsFromLastBday(xena, 4)).toEqual([5, 20.83]);
+  describe('yearsFromPastBday()', () => {
+    test('should return how many Earth years have passed from a specific age to current age', () => {
+      let xena = new Person("Xena", 9, 4);
+      expect(xena.yearsFromPastBday()).toEqual(5);
+    });
   });
 });
+
+//   test('should return how many Mercury years have passed from a specific age to current age', () => {
+//     let xena = new Person("Xena", 9);
+//     expect(yearsFromLastBday(xena, 4)).toEqual([5, 20.83]);
+//   });
+// });
