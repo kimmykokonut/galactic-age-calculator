@@ -45,7 +45,7 @@ describe('Person', () => {
   });
   describe('yearsFromMercury()', () => {
     test('should return how many Mercury years have passed from a specific age to current age', () => {
-    expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
+      expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
     });
   });
   describe('yearsFromVenus()', () => {
@@ -97,5 +97,7 @@ describe('Person', () => {
 });
 
 describe('isEmpty()', () => {
-
+  test('should return false if empty string is submitted', () => {
+    expect(isEmpty('')).toEqual(false);
+  });
 });
