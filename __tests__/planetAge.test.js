@@ -1,4 +1,4 @@
-import { Person } from '../src/js/planetAge.js';
+import Person from '../src/js/planetAge.js';
 
 describe('Person', () => {
   let reusablePerson;

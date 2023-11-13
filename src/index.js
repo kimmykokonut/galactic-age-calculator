@@ -1,21 +1,45 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-// import Person from './js/planetAge.js';
+import Person from './js/planetAge';
 
-// function handleTriangleForm(e) {
-//   e.preventDefault();
-//   document.querySelector('#response').innerText = null;
-//   const length2 = parseInt(document.querySelector('#length2').value);
-//   const length1 = parseInt(document.querySelector('#length1').value);
-//   const length3 = parseInt(document.querySelector('#length3').value);
-//   const triangle = new Triangle(length1, length2, length3);
-//   const response = triangle.checkType();
-//   const pTag = document.createElement("p");
-//   pTag.append(response);
-//   document.querySelector('#response').append(pTag);
-// }
+function handleAgeForm(e) {
+  e.preventDefault();
+  document.querySelector('#responseCurrent').innerText = null;
+  document.querySelector('#responsePast').innerText = null;
+  document.querySelector('#responseFuture').innerText = null;
+  const name = document.querySelector('#nameInput').value;
+  const ageCurrent = document.querySelector('#ageInput').value;
+  const agePast = document.querySelector('#agePast').value;
+  const ageFuture = document.querySelector('#ageFuture').value;
+  const person = new Person(name, ageCurrent, agePast, ageFuture);
 
-// window.addEventListener("load", function () {
-//   document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
-// });
+  const responseMerc = person.earthToMercury();
+  const responseVenus = person.earthToVenus();
+  const responseMars = person.earthToMars();
+  const responseJupiter = person.earthToJupiter();
+
+  const divDisplayCurrent = document.querySelector("#responseCurrent");
+  const h3Name = document.createElement("h3");
+  const ul = document.createElement("ul");
+  const liMe = document.createElement("li");
+  const liVe = document.createElement("li");
+  const liMa = document.createElement("li");
+  const liJu = document.createElement("li");
+  h3Name.append(`${name}: age ${ageCurrent} (Earth years)`);
+  liMe.append(`Your age on Mercury: ${ responseMerc }`);
+  liVe.append(`Your age on Venus: ${ responseVenus }`);
+  liMa.append(`Your age on Mars: ${ responseMars }`);
+  liJu.append(`Your age on Jupiter: ${ responseJupiter }`);
+  
+  divDisplayCurrent.append(h3Name, ul);
+  ul.append(liMe, liVe, liMa, liJu);
+
+  // const divDisplayPast = 
+
+
+}
+
+window.addEventListener("load", function () {
+  document.querySelector("#age-form").addEventListener("submit", handleAgeForm);
+});

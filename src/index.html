@@ -10,29 +10,34 @@
 
 <body>
   <div class="container">
-  <img class="img-fluid text-center" id="solarSystem" src="./assets/images/solarSystem.jpg" alt="planets in solar sytem"/>
-  <h1>How old are you really?</h1>
-  <h3>Let's see how old you would be based on other planet's solar years</h3>
-  <form id="age-form">
-    <label for="nameInput">Enter your name:</label>
-    <input id="nameInput" type="text" placeholder="Laika">
-    <br>
-    <label for="ageInput">Enter your age:</label>
-    <input id="ageInput" type="number">
-    <br>
-    <label for="agePast">Enter a past age to see how many birthdays have happened between then and now:</label>
-    <input id="agePast" type="number">
-    <br>
-    <label for="ageFuture">Enter a future age to see how many birthdays have yet to happen between then and now:</label>
-    <input id="ageFuture" type="number">
-    <br>
-    <button type="submit">Blast off!</button>
-  </form>
+    <img class="img-fluid text-center" id="solarSystem" src="./assets/images/solarSystem.jpg"
+      alt="planets in solar sytem" />
+    <h1>How old are you really?</h1>
+    <h3>Let's see how old you would be based on other planet's solar years</h3>
+    <form id="age-form">
+      <label for="nameInput">Enter your name:</label>
+      <input id="nameInput" type="text" placeholder="Laika">
+      <br>
+      <label for="ageInput">Enter your age:</label>
+      <input id="ageInput" type="number">
+      <br>
+      <label for="agePast">Enter a past age to see how many birthdays have happened between then and now:</label>
+      <input id="agePast" type="number">
+      <br>
+      <label for="ageFuture">Enter a future age to see how many birthdays have yet to happen between then and
+        now:</label>
+      <input id="ageFuture" type="number">
+      <br>
+      <button type="submit" class="btn btn-primary">Blast off!</button>
+    </form>
+    <div class="card" style="width: 20rem;">
+      <div id="responseCurrent" class="card-text"></div>
+      <div id="responsePast" class="card-text"></div>
+      <div id="responseFuture" class="card-text"></div>
+    </div>
     <img class="img-fluid" src="./assets/images/animal.webp" alt="animals in space" />
-  <div id="responseCurrent"></div>
-  <div id="responsePast"></div>
-  <div id="responseFuture"></div>
-</div>
+
+  </div>
 </body>
 
 </html>

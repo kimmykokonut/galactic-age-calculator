@@ -1,4 +1,4 @@
-export class Person {
+export default class Person {
   constructor(name, age, pastBday, futureBday) {
     this.name = name;
     this.age = age;
