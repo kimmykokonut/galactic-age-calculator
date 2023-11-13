@@ -1,4 +1,4 @@
-export default class Person {
+export class Person {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -6,7 +6,9 @@ export default class Person {
   yearsToDays() {
     return this.age * 365;
   }
-  earthToMercury() {
-    
-  }
 }
+export function earthToMercury(person) {
+    let mercuryAge = person.yearsToDays() / 88;
+    let mercuryAgeRound = Math.round(mercuryAge*100)/100;
+    return mercuryAgeRound;
+  }

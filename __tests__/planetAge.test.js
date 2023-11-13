@@ -1,5 +1,4 @@
-import { experiments } from 'webpack';
-import Person from '../src/js/planetAge.js';
+import { Person, earthToMercury } from '../src/js/planetAge.js';
 
 describe('Person', () => {
   test('should correctly create a person object with name and age in earth years', () => {
@@ -17,6 +16,6 @@ describe('yearsToDays()', () => {
 describe('earthToMercury()', () => {
   test('should return mercury age in years', () => {
     const geneveve = new Person("Geneveve", 13);
-    expect(geneveve.earthToMercury()).toEqual(54);
+    expect(earthToMercury(geneveve)).toEqual(53.92);
   });
 });
