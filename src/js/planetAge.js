@@ -32,6 +32,7 @@ export default class Person {
   yearsFromMercury() {
     this.age = this.yearsFromPastBday();
     const mercTimePast = this.earthToMercury();
+    //reset this.age?
     return mercTimePast;
   }
   yearsFromVenus() {
