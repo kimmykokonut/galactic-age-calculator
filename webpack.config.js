@@ -21,7 +21,7 @@ module.exports = {
       verbose: true 
     }),
     new HtmlWebpackPlugin({
-      title: 'Template Repo',
+      title: 'Galactic Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
