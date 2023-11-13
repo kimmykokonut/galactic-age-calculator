@@ -28,12 +28,13 @@ export class Person {
     return jupiterAgeRound;
   }
   yearsFromPastBday() {
-    const earthTime = (this.age - this.pastBday);
+    const earthTime = parseInt(this.age - this.pastBday);
     // const mercTime = Math.round(((person.age - pastAge) / 0.24) * 100) / 100;
     return earthTime;
   }
   yearsFromMercury() {
-    console.log("here");
+    const mercTime = Math.round(((this.yearsFromPastBday()) / 0.24) * 100) / 100;
+    return mercTime;
   }
 } 
 // export function yearsFromLastBday(person, pastAge) {

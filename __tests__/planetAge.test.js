@@ -4,14 +4,13 @@ describe('Person', () => {
   let reusablePerson;
 
   beforeEach(() => {
-    reusablePerson = new Person("Geneveve", 13);
+    reusablePerson = new Person("Geneveve", 13, 3);
   });
 
   test('should correctly create a person object from reusablePerson with name and age in earth years', () => {
     expect(reusablePerson.name).toEqual("Geneveve");
     expect(reusablePerson.age).toEqual(13);
   });
-
   describe('yearsToDays()', () => {
     test('should return earth age in years to earth age in days', () => {
       expect(reusablePerson.yearsToDays()).toEqual(4745);
@@ -39,14 +38,12 @@ describe('Person', () => {
   });
   describe('yearsFromPastBday()', () => {
     test('should return how many Earth years have passed from a specific age to current age', () => {
-      let xena = new Person("Xena", 9, 4);
-      expect(xena.yearsFromPastBday()).toEqual(5);
+      expect(reusablePerson.yearsFromPastBday()).toEqual(10);
     });
   });
   describe('yearsFromMercury()', () => {
     test('should return how many Mercury years have passed from a specific age to current age', () => {
-    let xena = new Person("Xena", 9, 4);
-    expect(xena.yearsFromMercury()).toEqual(20.83);
+    expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
     });
   });
 
