@@ -1,4 +1,4 @@
-import { Person, earthToMercury } from '../src/js/planetAge.js';
+import { Person, earthToMercury, earthToVenus } from '../src/js/planetAge.js';
 
 describe('Person', () => {
   test('should correctly create a person object with name and age in earth years', () => {
@@ -17,5 +17,11 @@ describe('earthToMercury()', () => {
   test('should return mercury age in years', () => {
     const geneveve = new Person("Geneveve", 13);
     expect(earthToMercury(geneveve)).toEqual(53.92);
+  });
+});
+describe('earthToVenus()', () => {
+  test('should return venus age in years', () => {
+    const geneveve = new Person("Geneveve", 13);
+    expect(earthToVenus(geneveve)).toEqual(21.08);
   });
 });

@@ -8,7 +8,12 @@ export class Person {
   }
 }
 export function earthToMercury(person) {
-    let mercuryAge = person.yearsToDays() / 88;
-    let mercuryAgeRound = Math.round(mercuryAge*100)/100;
-    return mercuryAgeRound;
-  }
+  let mercuryAge = person.yearsToDays() / 88;
+  let mercuryAgeRound = Math.round(mercuryAge*100)/100;
+  return mercuryAgeRound;
+}
+export function earthToVenus(person) {
+  // let mercuryAge = person.yearsToDays() / 88;
+  // let mercuryAgeRound = Math.round(mercuryAge * 100) / 100;
+  // return mercuryAgeRound;
+}
