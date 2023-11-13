@@ -80,5 +80,10 @@ describe('Person', () => {
       expect(reusablePerson.yearsToMercury()).toEqual(33.33);
     });
   });
+  describe('yearsToVenus()', () => {
+    test('should return how many Venus years have yet to pass from current age to specific age', () => {
+      expect(reusablePerson.yearsToVenus()).toEqual(12.9);
+    });
+  });
 
 });

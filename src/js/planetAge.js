@@ -58,4 +58,7 @@ export class Person {
     const mercuryTimeFuture = this.earthToMercury();
     return mercuryTimeFuture;
   }
+  yearsToVenus() {
+    
+  }
 } 
