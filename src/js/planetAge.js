@@ -36,10 +36,15 @@ export class Person {
   yearsFromVenus() {
     this.age = this.yearsFromPastBday()
     const venusTimePast = this.earthToVenus();
-    console.log(venusTimePast);
     return venusTimePast;
   }
   yearsFromMars() {
+    this.age = this.yearsFromPastBday()
+    const marsTimePast = this.earthToMars();
+    console.log(marsTimePast);
+    return marsTimePast;
+  }
+  yearsFromJupiter() {
     
   }
 } 
