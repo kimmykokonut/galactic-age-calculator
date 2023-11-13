@@ -5,10 +5,10 @@ export class Person {
     this.pastBday = pastBday;
   }
   convertAge(solarYear) {
-    // const agePlanet = parseInt(this.age) / solarYear;
-    // return Math.round(agePlanet * 100) / 100;
+    const agePlanet = parseInt(this.age) / solarYear;
+    return Math.round(agePlanet * 100) / 100;
   }
-}
+
 //   earthToMercury() {
 //     let mercuryAge = this.convertAge(0.24);
 //     return mercuryAge;
