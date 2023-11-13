@@ -17,11 +17,10 @@ export class Person {
     let venusAge = this.convertAge(0.62);
     return venusAge;
   }
-//   earthToMars() {
-//     let marsAge = parseInt(this.age) / 1.88;
-//     let marsAgeRound = Math.round(marsAge * 100) / 100;
-//     return marsAgeRound;
-//   }
+  earthToMars() {
+    let marsAge = this.convertAge(1.88);
+    return marsAge;
+  }
 //   earthToJupiter() {
 //     let jupiterAge = parseInt(this.age) / 11.86;
 //     let jupiterAgeRound = Math.round(jupiterAge * 100) / 100;
