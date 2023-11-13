@@ -8,15 +8,22 @@ describe('Person', () => {
     reusablePerson = new Person("Geneveve", 13, 3);
   });
 
-  // test('should correctly create a person object from reusablePerson with name and age in earth years', () => {
-  //   expect(reusablePerson.name).toEqual("Geneveve");
-  //   expect(reusablePerson.age).toEqual(13);
-  // });
-  // describe('earthToMercury()', () => {
-  //   test('should return mercury age in years', () => {
-  //     expect(reusablePerson.earthToMercury()).toEqual(54.17);
-  //   });
-  // });
+  test('should correctly create a person object from reusablePerson with name and age in earth years', () => {
+    expect(reusablePerson.name).toEqual("Geneveve");
+    expect(reusablePerson.age).toEqual(13);
+  });
+
+  describe('solarYear()', () => {
+    test('should take user age and convert with parameter of mercury solar year', () => {
+      expect(reusablePerson.convertAge(0.24)).toEqual(54.17);
+    });
+  });
+
+  describe('earthToMercury()', () => {
+    test('should return mercury age in years', () => {
+      expect(reusablePerson.earthToMercury()).toEqual(54.17);
+    });
+  });
   // describe('earthToVenus()', () => {
   //   test('should return venus age in years', () => {
   //     expect(reusablePerson.earthToVenus()).toEqual(20.97);
@@ -42,9 +49,5 @@ describe('Person', () => {
   //   expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
   //   });
   // });
-  describe('solarYear()', () => {
-    test('should take user age and convert with parameter of mercury solar year', () => {
-      expect(reusablePerson.convertAge(0.24)).toEqual(54.17);
-    });
-  });
+
 });

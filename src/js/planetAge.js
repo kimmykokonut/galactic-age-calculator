@@ -9,10 +9,10 @@ export class Person {
     return Math.round(agePlanet * 100) / 100;
   }
 
-//   earthToMercury() {
-//     let mercuryAge = this.convertAge(0.24);
-//     return mercuryAge;
-//   }
+  earthToMercury() {
+    let mercuryAge = this.convertAge(0.24);
+    return mercuryAge;
+  }
 //   earthToVenus() {
 //     let venusAge = parseInt(this.age) / 0.62;
 //     let venusAgeRound = Math.round(venusAge * 100) / 100;
