@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Person from './js/planetAge';
+import { Person, isEmpty } from './js/planetAge';
 
 function handleAgeForm(e) {
   e.preventDefault();

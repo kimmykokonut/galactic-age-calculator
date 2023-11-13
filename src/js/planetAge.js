@@ -1,4 +1,4 @@
-export default class Person {
+export class Person {
   constructor(name, age, pastBday, futureBday) {
     this.name = name;
     this.age = age;
@@ -75,3 +75,7 @@ export default class Person {
     return jupiterTimeFuture;
   }
 } 
+
+export function isEmpty(testString) {
+  return false;
+}

@@ -1,4 +1,4 @@
-import Person from '../src/js/planetAge.js';
+import { Person, isEmpty } from '../src/js/planetAge.js';
 
 describe('Person', () => {
   let reusablePerson;
@@ -94,5 +94,8 @@ describe('Person', () => {
       expect(reusablePerson.yearsToJupiter()).toEqual(0.67);
     });
   });
+});
+
+describe('isEmpty()', () => {
 
 });
