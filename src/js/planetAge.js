@@ -27,3 +27,6 @@ export class Person {
     return jupiterAgeRound;
   }
 } 
+export function yearsFromLastBday() {
+  console.log('years');
+}

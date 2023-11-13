@@ -1,4 +1,4 @@
-import { Person } from '../src/js/planetAge.js';
+import { Person, yearsFromLastBday } from '../src/js/planetAge.js';
 
 describe('Person', () => {
   let reusablePerson;
@@ -36,5 +36,11 @@ describe('Person', () => {
     test('should return jupiter age in years', () => {
       expect(reusablePerson.earthToJupiter()).toEqual(1.1);
     });
+  });
+});
+describe('yearsFromLastBday()', () => {
+  test('should return how many Earth years have passed from a specific age to current age', () => {
+    let xena = new Person("Xena", 9);
+    expect(yearsFromLastBday(xena, 4)).toEqual(5);
   });
 });
