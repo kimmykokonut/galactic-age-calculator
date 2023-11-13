@@ -1,3 +1,4 @@
+import { experiments } from 'webpack';
 import { Person } from '../src/js/planetAge.js';
 
 describe('Person', () => {
@@ -10,11 +11,6 @@ describe('Person', () => {
   test('should correctly create a person object from reusablePerson with name and age in earth years', () => {
     expect(reusablePerson.name).toEqual("Geneveve");
     expect(reusablePerson.age).toEqual(13);
-  });
-  describe('yearsToDays()', () => {
-    test('should return earth age in years to earth age in days', () => {
-      expect(reusablePerson.yearsToDays()).toEqual(4745);
-    });
   });
   describe('earthToMercury()', () => {
     test('should return mercury age in years', () => {
@@ -46,5 +42,9 @@ describe('Person', () => {
     expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
     });
   });
-
+  describe('solarYear()', () => {
+    test('should take user age and convert with parameter of mercury solar year', () => {
+      expect(reusablePerson.convertAge(0.24)).toEqual(54.17);
+    });
+  });
 });
