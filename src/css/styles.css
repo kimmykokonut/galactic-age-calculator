@@ -1,4 +1,4 @@
 body {
-  background-color: lightgray;
-  font-family: 'Space Grotesk', sans-serif;
+background: linear-gradient(to bottom, #0066cc 0%, #9900cc 100%);  font-family: 'Space Grotesk', sans-serif;
+  font-weight: bolder;
 }
