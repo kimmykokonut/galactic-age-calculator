@@ -39,6 +39,7 @@ export class Person {
     console.log(venusTimePast);
     return venusTimePast;
   }
+  yearsFromMars() {
+    
+  }
 } 
-
-// function mercuryFactor() {

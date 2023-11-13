@@ -54,5 +54,10 @@ describe('Person', () => {
       expect(reusablePerson.yearsFromVenus()).toEqual(16.13);
     });
   });
+  describe('yearsFromMars()', () => {
+    test('should return how many Mars years have passed from a specific age to current age', () => {
+      expect(reusablePerson.yearsFromMars()).toEqual(5.32);
+    });
+  });
 
 });
