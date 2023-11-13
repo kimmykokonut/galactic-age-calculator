@@ -5,6 +5,6 @@ export default class Person {
   }
 
   yearsToDays() {
-    return 4745;
+    return this.age * 365;
   }
 }
