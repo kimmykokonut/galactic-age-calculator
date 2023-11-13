@@ -13,7 +13,7 @@ export function earthToMercury(person) {
   return mercuryAgeRound;
 }
 export function earthToVenus(person) {
-  // let mercuryAge = person.yearsToDays() / 88;
-  // let mercuryAgeRound = Math.round(mercuryAge * 100) / 100;
-  // return mercuryAgeRound;
+  let venusAge = person.yearsToDays() / 225;
+  let venusAgeRound = Math.round(venusAge * 100) / 100;
+  return venusAgeRound;
 }

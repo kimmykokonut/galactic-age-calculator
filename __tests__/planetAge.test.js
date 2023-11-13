@@ -22,6 +22,6 @@ describe('earthToMercury()', () => {
 describe('earthToVenus()', () => {
   test('should return venus age in years', () => {
     const geneveve = new Person("Geneveve", 13);
-    expect(earthToVenus(geneveve)).toEqual(21.08);
+    expect(earthToVenus(geneveve)).toEqual(21.09);
   });
 });
