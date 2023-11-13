@@ -85,7 +85,6 @@ function handleAgeForm(e) {
   liJuFuture.append(`${responseJupiterFuture} Jupiter years`);
   ulFuture.append(liEaFuture, liMeFuture, liVeFuture, liMaFuture, liJuFuture);
   divDisplayFuture.append(h3Future, ulFuture);
-
 }
 
 window.addEventListener("load", function () {
