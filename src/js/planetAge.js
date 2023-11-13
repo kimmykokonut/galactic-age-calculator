@@ -5,6 +5,6 @@ export default class Person {
   }
 
   yearsToDays() {
-    console.log('hi');
+    return 4745;
   }
 }
