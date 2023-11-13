@@ -24,11 +24,11 @@ describe('Person', () => {
       expect(reusablePerson.earthToMercury()).toEqual(54.17);
     });
   });
-  // describe('earthToVenus()', () => {
-  //   test('should return venus age in years', () => {
-  //     expect(reusablePerson.earthToVenus()).toEqual(20.97);
-  //   });
-  // });
+  describe('earthToVenus()', () => {
+    test('should return venus age in years', () => {
+      expect(reusablePerson.earthToVenus()).toEqual(20.97);
+    });
+  });
   // describe('earthToMars()', () => {
   //   test('should return mars age in years', () => {
   //     expect(reusablePerson.earthToMars()).toEqual(6.91);
