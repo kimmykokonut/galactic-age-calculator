@@ -28,6 +28,6 @@ describe('earthToVenus()', () => {
 describe('earthToMars()', () => {
   test('should return mars age in years', () => {
     const geneveve = new Person("Geneveve", 13);
-    expect(earthToMars(geneveve)).toEqual(6.9);
+    expect(earthToMars(geneveve)).toEqual(6.91);
   });
 });

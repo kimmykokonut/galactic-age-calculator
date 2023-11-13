@@ -18,7 +18,7 @@ export function earthToVenus(person) {
   return venusAgeRound;
 }
 export function earthToMars(person) {
-  // let marsAge = person.yearsToDays() / 225;
-  // let marsAgeRound = Math.round(marsAge * 100) / 100;
-  // return marsAgeRound;
+  let marsAge = person.yearsToDays() / 687;
+  let marsAgeRound = Math.round(marsAge * 100) / 100;
+  return marsAgeRound;
 }
