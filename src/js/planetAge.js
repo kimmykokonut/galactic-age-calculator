@@ -3,8 +3,10 @@ export default class Person {
     this.name = name;
     this.age = age;
   }
-
   yearsToDays() {
     return this.age * 365;
+  }
+  earthToMercury() {
+    
   }
 }

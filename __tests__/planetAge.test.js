@@ -14,3 +14,9 @@ describe('yearsToDays()', () => {
     expect(geneveve.yearsToDays()).toEqual(4745);
   });
 });
+describe('earthToMercury()', () => {
+  test('should return mercury age in years', () => {
+    const geneveve = new Person("Geneveve", 13);
+    expect(geneveve.earthToMercury()).toEqual(54);
+  });
+});
