@@ -6,24 +6,24 @@ export class Person {
   yearsToDays() {
     return this.age * 365;
   }
-}
-export function earthToMercury(person) {
-  let mercuryAge = person.yearsToDays() / 88;
-  let mercuryAgeRound = Math.round(mercuryAge*100)/100;
-  return mercuryAgeRound;
-}
-export function earthToVenus(person) {
-  let venusAge = person.yearsToDays() / 225;
-  let venusAgeRound = Math.round(venusAge * 100) / 100;
-  return venusAgeRound;
-}
-export function earthToMars(person) {
-  let marsAge = person.yearsToDays() / 687;
-  let marsAgeRound = Math.round(marsAge * 100) / 100;
-  return marsAgeRound;
-}
-export function earthToJupiter(person) {
-  let jupiterAge = person.age / 12;
-  let jupiterAgeRound = Math.round(jupiterAge * 100) / 100;
-  return jupiterAgeRound;
-}
+  earthToMercury() {
+    let mercuryAge = parseInt(this.age) / 0.24;
+    let mercuryAgeRound = Math.round(mercuryAge * 100) / 100;
+    return mercuryAgeRound;
+  }
+  earthToVenus(person) {
+    let venusAge = parseInt(this.age) / 0.62;
+    let venusAgeRound = Math.round(venusAge * 100) / 100;
+    return venusAgeRound;
+  }
+  earthToMars(person) {
+    let marsAge = parseInt(this.age) / 1.88;
+    let marsAgeRound = Math.round(marsAge * 100) / 100;
+    return marsAgeRound;
+  }
+  earthToJupiter(person) {
+    let jupiterAge = parseInt(this.age) / 11.86;
+    let jupiterAgeRound = Math.round(jupiterAge * 100) / 100;
+    return jupiterAgeRound;
+  }
+} 
