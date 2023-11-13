@@ -54,6 +54,8 @@ export class Person {
     return earthTimeFuture;
   }
   yearsToMercury() {
-    
+    this.age = this.yearsToFutureBday()
+    const mercuryTimeFuture = this.earthToMercury();
+    return mercuryTimeFuture;
   }
 } 
