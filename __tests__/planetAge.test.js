@@ -69,6 +69,11 @@ describe('Person', () => {
       expect(reusablePerson.pastBday).toEqual(3);
       expect(reusablePerson.futureBday).toEqual(21);
     });
-  })
+  });
+  describe('yearsToFutureBday()', () => {
+    test('should return how many Earth years have yet to pass from current age to specific age', () => {
+      expect(reusablePerson.yearsToFutureBday()).toEqual(8);
+    });
+  });
 
 });

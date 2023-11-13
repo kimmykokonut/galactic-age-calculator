@@ -49,4 +49,7 @@ export class Person {
     const jupiterTimePast = this.earthToJupiter();
     return jupiterTimePast;
   }
+  yearsToFutureBday() {
+    
+  }
 } 
