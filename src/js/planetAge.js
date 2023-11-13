@@ -50,6 +50,7 @@ export class Person {
     return jupiterTimePast;
   }
   yearsToFutureBday() {
-    
+    const earthTimeFuture = parseInt(this.futureBday - this.age);
+    return earthTimeFuture;
   }
 } 
