@@ -1,8 +1,9 @@
 export class Person {
-  constructor(name, age, pastBday) {
+  constructor(name, age, pastBday, futureBday) {
     this.name = name;
     this.age = age;
     this.pastBday = pastBday;
+    this.futureBday = futureBday;
   }
   convertAge(solarYear) {
     const agePlanet = parseInt(this.age) / solarYear;
@@ -41,13 +42,11 @@ export class Person {
   yearsFromMars() {
     this.age = this.yearsFromPastBday()
     const marsTimePast = this.earthToMars();
-    console.log(marsTimePast);
     return marsTimePast;
   }
   yearsFromJupiter() {
     this.age = this.yearsFromPastBday()
     const jupiterTimePast = this.earthToJupiter();
-    console.log(jupiterTimePast);
     return jupiterTimePast;
   }
 } 

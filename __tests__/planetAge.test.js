@@ -5,7 +5,7 @@ describe('Person', () => {
   let reusablePerson;
 
   beforeEach(() => {
-    reusablePerson = new Person("Geneveve", 13, 3);
+    reusablePerson = new Person("Geneveve", 13, 3, 21);
   });
 
   test('should correctly create a person object from reusablePerson with name and age in earth years', () => {
@@ -64,5 +64,11 @@ describe('Person', () => {
       expect(reusablePerson.yearsFromJupiter()).toEqual(0.84);
     });
   });
+  describe('Person', () => {
+    test('should correctly create a person object from reusablePerson with updated properties', () => {
+      expect(reusablePerson.pastBday).toEqual(3);
+      expect(reusablePerson.futureBday).toEqual(21);
+    });
+  })
 
 });
