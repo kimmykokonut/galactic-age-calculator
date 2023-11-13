@@ -35,6 +35,13 @@ export class Person {
     console.log(mercTimePast);
     return mercTimePast;
   }
+  yearsFromVenus() {
+    // this.age = this.yearsFromPastBday()
+    // console.log(this.age);
+    // const mercTimePast = this.earthToMercury();
+    // console.log(mercTimePast);
+    // return mercTimePast;
+  }
 } 
 
 // function mercuryFactor() {
