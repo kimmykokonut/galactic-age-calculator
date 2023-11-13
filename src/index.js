@@ -35,8 +35,30 @@ function handleAgeForm(e) {
   divDisplayCurrent.append(h3Name, ul);
   ul.append(liMe, liVe, liMa, liJu);
 
-  // const divDisplayPast = 
+  const responseEarthPast = person.yearsFromPastBday();
+  // const responseMerc = person.earthToMercury();
+  // const responseVenus = person.earthToVenus();
+  // const responseMars = person.earthToMars();
+  // const responseJupiter = person.earthToJupiter();
 
+  const divDisplayPast = document.querySelector("#responsePast");
+  const h3Past = document.createElement("h3");
+  const ulPast = document.createElement("ul");
+  const liEaPast = document.createElement("li");
+  // const liMePast = document.createElement("li");
+  // const liVePast = document.createElement("li");
+  // const liMaPast = document.createElement("li");
+  // const liJuPast = document.createElement("li");
+
+  h3Past.append(`Number of years have past since you were ${ agePast } on Earth`);
+  liEaPast.append(`${ responseEarthPast } Earth years have past`);
+  // liMe.append(`Your age on Mercury: ${responseMerc}`);
+  // liVe.append(`Your age on Venus: ${responseVenus}`);
+  // liMa.append(`Your age on Mars: ${responseMars}`);
+  // liJu.append(`Your age on Jupiter: ${responseJupiter}`);
+  ulPast.append(liEaPast);
+  divDisplayPast.append(h3Past, ulPast);
+  
 
 }
 
