@@ -97,7 +97,7 @@ describe('Person', () => {
 });
 
 describe('isEmpty()', () => {
-  test('should return false if empty string is submitted', () => {
-    expect(isEmpty('')).toEqual(false);
+  test('should return true if empty string is submitted', () => {
+    expect(isEmpty('')).toEqual(true);
   });
 });

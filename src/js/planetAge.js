@@ -77,5 +77,5 @@ export class Person {
 } 
 
 export function isEmpty(testString) {
-  return false;
+  return (testString.trim().length === 0);
 }
