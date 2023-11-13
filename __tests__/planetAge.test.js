@@ -90,5 +90,10 @@ describe('Person', () => {
       expect(reusablePerson.yearsToMars()).toEqual(4.26);
     });
   });
+  describe('yearsToJupiter()', () => {
+    test('should return how many Jupiter years have yet to pass from current age to specific age', () => {
+      expect(reusablePerson.yearsToJupiter()).toEqual(0.67);
+    });
+  });
 
 });
