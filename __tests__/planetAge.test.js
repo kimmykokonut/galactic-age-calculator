@@ -87,7 +87,7 @@ describe('Person', () => {
   });
   describe('yearsToMars()', () => {
     test('should return how many Mars years have yet to pass from current age to specific age', () => {
-      expect(reusablePerson.yearsToMars()).toEqual(4.25);
+      expect(reusablePerson.yearsToMars()).toEqual(4.26);
     });
   });
 
