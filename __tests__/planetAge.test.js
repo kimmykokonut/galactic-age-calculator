@@ -39,15 +39,15 @@ describe('Person', () => {
       expect(reusablePerson.earthToJupiter()).toEqual(1.1);
     });
   });
-  // describe('yearsFromPastBday()', () => {
-  //   test('should return how many Earth years have passed from a specific age to current age', () => {
-  //     expect(reusablePerson.yearsFromPastBday()).toEqual(10);
-  //   });
-  // });
-  // describe('yearsFromMercury()', () => {
-  //   test('should return how many Mercury years have passed from a specific age to current age', () => {
-  //   expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
-  //   });
-  // });
+  describe('yearsFromPastBday()', () => {
+    test('should return how many Earth years have passed from a specific age to current age', () => {
+      expect(reusablePerson.yearsFromPastBday()).toEqual(10);
+    });
+  });
+  describe('yearsFromMercury()', () => {
+    test('should return how many Mercury years have passed from a specific age to current age', () => {
+    expect(reusablePerson.yearsFromMercury()).toEqual(41.67);
+    });
+  });
 
 });
