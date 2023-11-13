@@ -3,3 +3,13 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: bolder;
 }
+#div-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+  justify-content: center;
+  border: 3px dashed black;
+  padding: 10px;
+}
