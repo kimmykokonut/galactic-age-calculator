@@ -32,6 +32,9 @@ export class Person {
     // const mercTime = Math.round(((person.age - pastAge) / 0.24) * 100) / 100;
     return earthTime;
   }
+  yearsFromMercury() {
+    console.log("here");
+  }
 } 
 // export function yearsFromLastBday(person, pastAge) {
 //   const earthTime = (person.age - pastAge);

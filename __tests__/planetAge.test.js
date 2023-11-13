@@ -43,10 +43,11 @@ describe('Person', () => {
       expect(xena.yearsFromPastBday()).toEqual(5);
     });
   });
-});
+  describe('yearsFromMercury()', () => {
+    test('should return how many Mercury years have passed from a specific age to current age', () => {
+    let xena = new Person("Xena", 9, 4);
+    expect(xena.yearsFromMercury()).toEqual(20.83);
+    });
+  });
 
-//   test('should return how many Mercury years have passed from a specific age to current age', () => {
-//     let xena = new Person("Xena", 9);
-//     expect(yearsFromLastBday(xena, 4)).toEqual([5, 20.83]);
-//   });
-// });
+});
