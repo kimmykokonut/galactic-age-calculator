@@ -2,7 +2,6 @@
   "name": "galactic-age-calculator",
   "version": "1.0.0",
   "repository": {
-    "type": "git",
     "url": "git+https://github.com/kimmykokonut/galactic-age-calculator.git"
   },
   "description": "Calculate Earth Age into other planet's solar years",

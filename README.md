@@ -46,7 +46,6 @@
 9. Now you can see your age based on other planets solar years!
 
 _If this is too much and you just want to see what it looks like, go to my github pages for this project here:  https://kimmykokonut.github.io/galactic-age-calculator_
-_currently gh-pages only showing the README.md_
 
 ### Optional:
 * If you want to build onto the project, you can run the terminal command _$ npm run build_
